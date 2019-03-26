@@ -7,20 +7,34 @@
     <title></title>
     <script src="js/person.js"></script>
     <script src="js/bmi_calculator.js"></script>
+    <link rel="stylesheet" href="css/bmi_style.css">
 </head>
 
 <body>
+    <div id = "bmi_welcome">
+        <h1>Craft Academy</br>Weight Control 3.0</h1>
+        <p>Type in your numbers, check your BMI.</p>
+
+    </div>
+    <div id = "bmi_matt">
+        <p class="bmi_switcher">
+            <span id="metric">METRIC </span>  |  <span id="imperial"> IMPERIAL</span>
+        </p>
+    </div>
+    <div id = "bmi_calc">
     <form id="calculate">
         <div id="metric-inputs">
-            <input type="text" id="weight-in-kgs" placeholder="Weight">
-            <input type="text" id="height-in-cm" placeholder="Height">
+            <input type="text" id="weight-in-kgs" placeholder="Weight (kg)">
+            <input type="text" id="height-in-cm" placeholder="Height (cm)">
         </div>
 
-        <button type="submit" value="Calculate"> Calculate </button>
+        <button type="submit" id="bmi_button" value="Calculate"> Calculate </button>
     </form>
     <div>
-        <span id="display_value"></span>
-        <span id="display_message"></span>
+        <p><span id="display_value"></span>
+        <span id="display_message"></span></p>
+    </div>
+
     </div>
 
     <script type="text/javascript">
